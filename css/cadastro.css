@@ -1,0 +1,55 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+#imgpng{
+    width: 140px;
+    height: 100px;
+}
+#userName{
+    width: 290px;
+    height: 35px;
+    margin: 15px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#campobrigatorio{
+    color: #FB6707;
+}
+#login{
+    width: 290px;
+    height: 35px;
+    margin: 15px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#obrigcampo{
+    color: #FB6707;
+}
+#senha{
+    width: 290px;
+    height: 35px;
+    margin: 15px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#obrigat{
+    color: #FB6707;
+}
+#cadastrar{
+    width: 115px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #FB6707;
+    color: black;
+    border: solid  2px #FB6707;
+    font-size: 16px;
+}
+.login{
+    background-color:#22262d ;
+}

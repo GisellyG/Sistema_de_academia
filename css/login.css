@@ -1,0 +1,75 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+#img{
+    width: 140px;
+    height: 100px;
+}
+#login{
+    width: 280px;
+    height: 35px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#usuario{
+    width: 280px;
+    height: 35px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#senha{
+    width: 280px;
+    height: 35px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#entrar{
+    width: 65px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #FB6707;
+    color: black;
+    border: solid  2px #FB6707;
+    font-size: 16px;
+}
+.login{
+    background-color:#22262d ;
+}
+.input{
+    width: 280px;
+    height: 32px;
+    margin: 15px;
+    border: 1px solid gray;
+    background-color: #2b3038;
+    color: white;
+    display: block;
+}
+#obrigatorio{
+    color:#FB6707
+}
+#campobrig{
+    color: #FB6707;
+}
+#obrig{
+    color: #FB6707;
+}
+#entrada1{
+    min-height: 80px;;
+}
+#entrada2{
+    min-height: 80px;
+}
+#entrada3{
+    min-height: 80px;
+}
+
+
+
+
+
