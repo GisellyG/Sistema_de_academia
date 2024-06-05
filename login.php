@@ -16,6 +16,11 @@
                 <div class="py-2 px-4 text-center">
                     <img src=".//imagens/logoacademia.png" id="img" alt="logo">
                 </div>
+                <?php   
+                    if(isset($_GET['erro']) ){
+                        echo  '<span class="text-danger d-flex justify-content-center text-center">Dados Inválidos</span>';
+                    }
+                ?>
                 <div class="rounded-3 shadow">
                     <div class="py-3 px-3" id="entrada1">
                         <label class="text-white-50" for="">Usuário</label>
