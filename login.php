@@ -18,7 +18,7 @@
                 </div>
                 <?php   
                     if(isset($_GET['erro']) ){
-                        echo  '<span class="text-danger d-flex justify-content-center text-center">Dados Inválidos</span>';
+                        echo  '<span class="text-danger d-flex justify-content-center text-center">usuario ou senha incorreta</span>';
                     }
                 ?>
                 <div class="rounded-3 shadow">
