@@ -24,7 +24,7 @@
 <body>
     <div>
         <form action="verificar/updateSuplem.php" method="POST" data-parsley-validate>
-            <div class="login container-fluid rounded card-body py-5 px-md-5 border border-dark rounded-3 shadow">
+            <div id="formSuplem" class="login container-fluid rounded card-body py-5 px-md-5 border border-dark rounded-3 shadow">
                 <div class="rounded-3 shadow">
                 <input value="<?php echo $idSuplemento; ?>"class="m-0" type="hidden" name="idSuplemento" id="idSuplemento" placeholder="Nome" required>
                     <div class="py-3 px-3" id="entrada1">

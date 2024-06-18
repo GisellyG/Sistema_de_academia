@@ -5,15 +5,7 @@
     width: 140px;
     height: 100px;
 }
-#userName{
-    width: 290px;
-    height: 35px;
-    margin: 15px;
-    border: 1px solid gray;
-    background-color: #2b3038;
-    color: white;
-    display: block;
-}
+
 #campobrigatorio{
     color: #FB6707;
 }
@@ -52,4 +44,4 @@
 }
 .login{
     background-color:#22262d ;
-}
+} 

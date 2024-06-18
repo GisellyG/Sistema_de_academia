@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/cadastrosuplem.css">
 </head>
+
 <body>
     <div class="container-fluid py-5 bg-light">
         <div class="row justify-content-center">
@@ -45,13 +47,31 @@
                                     <label for="funcao" class="form-label text-secondary">Função <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Informe a função" required>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="categoria" class="form-label text-secondary">Categoria <span class="text-danger">*</span></label>
+                                    <?php
+                                    require './conexao.php';
+
+                                    $sql = "SELECT * FROM categorias";
+                                    $resultado = $conn->query($sql);
+                                    $categorias = $resultado->fetchAll(PDO::FETCH_ASSOC); 
+                                    ?>
+
+                                    <select class="form-select" id="categoria" name="categoria" required>
+                                        <option selected disabled value="">Selecione a categoria</option>
+                                        <?php foreach ($categorias as $categoria) : ?>
+                                            <option value="<?= $categoria['id'] ?>"><?= $categoria['nome'] ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="valor" class="form-label text-secondary">Valor <span class="text-danger">*</span></label>
                                 <input type="number" class="form-control" id="valor" name="valor" placeholder="Informe o valor" required>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary px-4">Cadastrar</button>
+                                <button type="submit" name="cadastrar" class="btn btn-primary px-4">Cadastrar</button>
                             </div>
                         </form>
                     </div>
@@ -64,4 +84,5 @@
     <script src="./node_modules/parsleyjs/dist/parsley.min.js"></script>
     <script src="./node_modules/parsleyjs/dist/i18n/pt-br.js"></script>
 </body>
+
 </html>

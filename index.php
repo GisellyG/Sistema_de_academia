@@ -38,7 +38,7 @@
             <a class="nav-link" href="tabelacateg.php">Categoria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" aria-disabled="true">Relatorio</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
     </div>
     <div id="cardInstrut" class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title d-flex aling-items-center justify-content-center">Tabela Instrutor</h5>
+        <h5 class="card-title d-flex aling-items-center justify-content-center">Relatório</h5>
         <a href="#" id="entrar" class="btn d-flex aling-items-center justify-content-center">Entrar</a>
       </div>
     </div>

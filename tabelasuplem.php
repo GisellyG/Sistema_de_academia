@@ -4,10 +4,12 @@
     if (!isset($_SESSION['id'])) {
         header('Location: login.php');
     }
-$sql = "SELECT * FROM suplementos";
+    $sql = "SELECT s.*, c.nome AS categoria_nome 
+    FROM suplementos s
+    INNER JOIN categorias c ON s.id_categoria = c.id";
 $resultado = $conn->prepare($sql);
-$resultado -> execute();
-$suplementos = $resultado -> fetchAll(PDO::FETCH_ASSOC);
+$resultado->execute();
+$suplementos = $resultado->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html>
@@ -90,6 +92,7 @@ $suplementos = $resultado -> fetchAll(PDO::FETCH_ASSOC);
             <th>Formato</th>
             <th>Função</th>
             <th>Valor</th>
+            <th>Categoria</th>
             <th>Ações</th>
           </tr>
         </thead>
@@ -105,6 +108,7 @@ $suplementos = $resultado -> fetchAll(PDO::FETCH_ASSOC);
                 echo "<td>".$suplemento['formato'];
                 echo "<td>".$suplemento['funcao'];
                 echo "<td>".$suplemento['valor'];
+                echo "<td>".$suplemento['categoria_nome']."</td>";
                 echo "<td>
                 <div class='d-flex'>
                   <form method='POST' action='verificar/delete.php'>
