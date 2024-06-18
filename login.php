@@ -22,11 +22,6 @@
                     }
                 ?>
                 <div class="rounded-3 shadow">
-                    <div class="py-3 px-3" id="entrada1">
-                        <label class="text-white-50" for="">Usuário</label>
-                        <label id="obrigatorio" for="">*</label>
-                        <input class="m-0" type="text" name="usuario" id="usuario" placeholder="Usuário" required>
-                    </div>
                     <div class="py-3 px-3" id="entrada2">
                         <label class="text-white-50" for="">Login</label>
                         <label id="campobrig" for="">*</label>

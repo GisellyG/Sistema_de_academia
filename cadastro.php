@@ -18,11 +18,6 @@
                 </div>
                 <div class="rounded-3 shadow conteudoinput">
                     <div class="py-3 px-3">
-                        <label class="text-white-50" for="">Usuário</label>
-                        <label id="campobrigatorio" for="">*</label>
-                        <input class="m-0" type="text" name="usuario" id="userName" placeholder="Usuário" required>
-                    </div>
-                    <div class="py-3 px-3">
                         <label class="text-white-50" for="">Login</label>
                         <label id="obrigcampo" for="">*</label>
                         <input class="m-0" type="text" name="login" id="login" placeholder="Login" required>

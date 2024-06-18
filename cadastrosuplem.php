@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/cadastrosuplem.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Suplementos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastrosuplem.css">
 </head>
 <body>
-    <div id="todo">
-        <form action="verificar/cadastrarsuplem.php" method="POST" data-parsley-validate>
-            <div class="cadastro container-fluid rounded card-body py-5 px-md-5 border border-dark rounded-3 shadow">
-                <div class="rounded-3 shadow">
-                    <div class="py-3 px-3" id="entrada1">
-                        <label class="text-white-50" for="">Nome</label>
-                        <label id="obrigatorio" for="">*</label>
-                        <input class="m-0" type="text" name="nome" id="nome" placeholder="Nome" required>
+    <div class="container-fluid py-5 bg-light">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-header bg-dark py-3 rounded-top">
+                        <h4 class="text-center text-white mb-0">Cadastro de Suplementos</h4>
                     </div>
-                    <div class="py-3 px-3" id="entrada2">
-                        <label class="text-white-50" for="">Marca</label>
-                        <label id="campobrig" for="">*</label>
-                        <input class="m-0" type="text" name="marca" id="marca" placeholder="Marca" required>
+                    <div class="card-body p-4 p-md-5">
+                        <form action="verificar/cadastrarsuplem.php" method="POST" data-parsley-validate>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label text-secondary">Nome <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe o nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="marca" class="form-label text-secondary">Marca <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="marca" name="marca" placeholder="Informe a marca" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="quantidade" class="form-label text-secondary">Quantidade <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Informe a quantidade" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="peso" class="form-label text-secondary">Peso <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="peso" name="peso" placeholder="Informe o peso" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="formato" class="form-label text-secondary">Formato <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="formato" name="formato" placeholder="Informe o formato" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="funcao" class="form-label text-secondary">Função <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Informe a função" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="valor" class="form-label text-secondary">Valor <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="valor" name="valor" placeholder="Informe o valor" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-4">Cadastrar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="py-3 px-3" id="entrada3">
-                        <label class="text-white-50" for="">Quantidade</label>
-                        <label id="obrig" for="">*</label>
-                        <input class="m-0" type="number" name="quantidade" id="quantidade" placeholder="Quantidade" required>
-                    </div>
-                    <div class="py-3 px-3" id="entrada3">
-                        <label class="text-white-50" for="">Peso</label>
-                        <label id="obrig" for="">*</label>
-                        <input class="m-0" type="text" name="peso" id="peso" placeholder="Peso" required>
-                    </div>
-                    <div class="py-3 px-3" id="entrada3">
-                        <label class="text-white-50" for="">Formato</label>
-                        <label id="obrig" for="">*</label>
-                        <input class="m-0" type="text" name="formato" id="formato" placeholder="Formato" required>
-                    </div>
-                    <div class="py-3 px-3" id="entrada3">
-                        <label class="text-white-50" for="">Função</label>
-                        <label id="obrig" for="">*</label>
-                        <input class="m-0" type="text" name="funcao" id="funcao" placeholder="Função" required>
-                    </div>
-                    <div class="py-3 px-3" id="entrada3">
-                        <label class="text-white-50" for="">Valor</label>
-                        <label id="obrig" for="">*</label>
-                        <input class="m-0" type="number" name="valor" id="valor" placeholder="Valor" required>
-                    </div>
-                </div>
-                <div class="text-center py-1 px-2 cadastrar">
-                    <input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar">
                 </div>
             </div>
-        </form>
+        </div>
     </div>
-    </div>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/parsleyjs/dist/parsley.min.js"></script>
     <script src="./node_modules/parsleyjs/dist/i18n/pt-br.js"></script>
-    <link rel="stylesheet" href="node_modules/parsleyjs/src/parsley.css">
 </body>
 </html>

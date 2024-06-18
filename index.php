@@ -26,10 +26,10 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: white;">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="tabelasuplem.php">Suplementos</a>
@@ -59,21 +59,18 @@
       <div class="card-body">
         <h5 class="card-title d-flex aling-items-center justify-content-center">Tabela Suplemento</h5>
         <a href="tabelasuplem.php" id="entrar" class="btn d-flex aling-items-center justify-content-center">Entrar</a>
-        <!-- <a href="tabelasuplem.php" class="card-link">Another link</a> -->
       </div>
     </div>
     <div id="cardCateg" class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title d-flex aling-items-center justify-content-center">Tabela Categoria</h5>
         <a href="tabelacateg.php" id="entrar" class="btn d-flex aling-items-center justify-content-center">Entrar</a>
-        <!-- <a href="#" class="card-link">Another link</a> -->
       </div>
     </div>
     <div id="cardInstrut" class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title d-flex aling-items-center justify-content-center">Tabela Instrutor</h5>
         <a href="#" id="entrar" class="btn d-flex aling-items-center justify-content-center">Entrar</a>
-        <!-- <a href="#" class="card-link">Another link</a> -->
       </div>
     </div>
   </div>

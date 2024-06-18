@@ -1,105 +1,43 @@
 *{
     font-family: "Poppins", sans-serif;
-    background-color: #151515;
 }
-#imagem{
+#imagemAcadem{
     width: 86px;
     height: 56px;
 }
-#contNav{
-    justify-content: space-between;
+#navbarFuncio{
+    color: black;
 }
-#sair{
-    width: 15px;
-    height: 18px;
+#card{
+    margin: 25px; 
 }
-#navSaida{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+#cardSuplem{
+    color: #ffffff;
+    background-color: #22262b;
+    border: 2px solid #ffffff; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 20px;
 }
-#img1{
-    height: 700px;
+#entrar{
+    color: #ffffff;
 }
-#img2{
-    height: 700px;
+#cardCateg{
+    color: #ffffff;
+    background-color: #22262b;
+    border: 2px solid #ffffff; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 20px;
 }
-#img3{
-    height: 700px;
+#cardInstrut{
+    color: #ffffff;
+    background-color: #22262b;
+    border: 2px solid #ffffff; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 20px;
 }
-#nossEndereç{
-    padding: 25px;
-    height: 220px;
-    color: white;
-}
-#endereço{
-    width: 45px;
-    height: 45px;
-}
-#horaFuncio{
-    padding: 25px;
-    height: 210px;
-    color: white;
-}
-#horario{
+#dropdown{
     color: #FB6707;
-}
-#horario2{
-    color: #FB6707;
-}
-#relogio{
-    width: 45px;
-    height: 45px;
-}
-#planosmensais{
-    padding: 25px;
-    height: 240px;
-    color: white;
-}
-#planos{
-    color: #FB6707;
-}
-#mensal{
-    color: #FB6707;
-}
-#diaria{
-    color: #FB6707;
-}
-#militar{
-    color: #FB6707;
-}
-#trimestral{
-    color: #FB6707;
-}
-#semestral{
-    color: #FB6707;
-}
-#instrutores{
-    padding: 25px;
-    height: 900px;
-    color: white;
-}
-#cabecalhoInst{
-    margin-top: 90px;
-}
-#barbara{
-    width: 146px;
-    height: 195px;
-}
-#geiza{
-    width: 146px;
-    height: 195px;
-}
-#thais{
-    width: 146px;
-    height: 195px;
-}
-#luiz{
-    width: 146px;
-    height: 195px;
-}
-#leo{
-    width: 146px;
-    height: 195px;
 }
